@@ -10,6 +10,8 @@ const AuthRouter = Router();
 require("dotenv").config();
 const secretKey = "my_super_secret";
 AuthRouter.post("/admin_login", async (req, res) => {
+  console.log("yes");
+  
   const { email, password } = req.body;
 
   try {
